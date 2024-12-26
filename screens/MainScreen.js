@@ -76,5 +76,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     fontSize: 41,
     fontWeight: '500',
+  },
+  emptyListText: {
+    paddingTop: 10,
+    paddingBottom: 15,
+    paddingHorizontal: 15,
+    fontSize: 15,
+    lineHeight: 20,
+    color: '#737373',
   }
 })
