@@ -24,8 +24,8 @@ const App = () => {
       
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Main" component={MainScreen} />
-          <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen options={{ headerShown: false }} name="Main" component={MainScreen} />
+          <Stack.Screen options={{ headerShown: false }} name="Login" component={LoginScreen} />
         </Stack.Navigator>
       </NavigationContainer>
 
