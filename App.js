@@ -9,14 +9,27 @@ import {
   View,
 } from 'react-native';
 import MainScreen from './screens/MainScreen';
+import LoginScreen from './screens/LoginScreen';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const App = () => {
 
+  const Stack = createNativeStackNavigator();
+
   return (
     <Provider store={store}>
-      <MainScreen />
+      
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Main" component={MainScreen} />
+          <Stack.Screen name="Login" component={LoginScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+
+      {/* <MainScreen /> */}
     </Provider>
   );
 };
