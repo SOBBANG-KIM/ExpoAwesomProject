@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "newArchEnabled": true,
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": ["react-redux"]
+      }
     }
   }
 }
